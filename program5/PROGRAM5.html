@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>REGISTRATION FORM</title>
+<style>
+body{
+     font-family:arial,sans-serif;
+     background-color:pink;
+     padding:20px;
+     }
+     form{
+     background-color:powderblue;
+     max-width: 500px;
+     margin: auto;
+     padding: 25px;
+     border:1px solid black;
+     }
+     button{
+     margin-left:100px;
+     }
+</style>
+</head>
+<body>
+<form action="">
+<h1><center>REGISTRATION FORM</h1></center>
+<fieldset>
+<legend>user information</legend><br>
+<label for="fname"><b>Name</b></label>
+<select id='title' name="title" required>
+<option value="mr">Mr</option>
+<option value="mrs">Mrs</option>
+</select>
+ <input type="text" placeholder="your name" name="first name" id="fname" required>
+<br><br>
+<label for="phone"><b>phone</b></label>
+    <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" place holder><br><br>
+<label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+</fieldset><br><br>
+<label for="address"><b>Address</b></label>
+    <textarea id="address" required placeholder="Enter Address" name="address" rows="3"></textarea><br><br>
+<label><b>Gender</b></label>    
+   <label><input type="radio" name="gender" value="male">Male</label>
+   <label><input type="radio" name="gender" value="female">Female</label>
+   <label><input type="radio" name="gender" value="others">others</label><br><br>
+<label><b>Language knows</b></label>    
+   <label><input type="checkbox" name="language" value="english">English</label>
+   <label><input type="checkbox" name="language" value="malayalam">Malayalam</label>
+   <label><input type="checkbox" name="language" value="Hindi">Hindi</label><br><br>
+   <label for="course"><b>course</b></label>
+<select id='course' name="course" required>
+<option value="">--course--</option>
+<option value="mca">MCA</option>
+<option value="mba">MBA</option>
+</select></br></br></br>
+<button type="submit"><b>SUBMIT<b></button>  
+<button type="reset"style="margin-left:10px;"><b>RESET<b></button>  
+</form>
+</body>
+</html>
